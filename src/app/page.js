@@ -1,12 +1,15 @@
-// import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "../../public/logobus.png";
 
 export default function Home() {
   return (
     <>
     <header className={styles.header}>
-        <Link href={'./'} className={styles.logo}>logo</Link>
+        <Link href={'./'} className={styles.logo}>
+         <Image src={Logo} className="logo"/>
+        </Link>
 
         <nav className={styles.navbar}>
             <Link href={'#'}>Cadastrar</Link>
